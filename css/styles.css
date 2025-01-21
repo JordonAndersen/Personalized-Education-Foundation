@@ -1,0 +1,328 @@
+body {
+    background-color: #f1f1f1;
+}
+
+h1 {
+    color: #1d428a;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #1d428a;
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+#text {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+
+}
+
+.blurimg {
+    filter: blur(1px) grayscale(.25)
+}
+
+.centered {
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-family: "Oswald";
+    text-shadow: 2px 3px black;
+    left: 50%;
+}
+
+
+.centeredtop {
+    text-align: center;
+}
+
+.centeredtop img {
+    width: 50%;
+    object-fit: contain;
+}
+
+
+.pefimg1 {
+    padding-left: 35px;
+    padding-bottom: 80px;
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+
+}
+
+.pefimg2 {
+    padding-right: 35px;
+
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+
+.pefimg3 {
+    padding-left: 35px;
+    padding-bottom: 30px;
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+}
+
+.pefimg4 {
+    padding-right: 35px;
+    padding-bottom: 30px;
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+
+}
+
+.pefimg5 {
+    padding-left: 35px;
+    padding-bottom: 30px;
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+}
+
+.buttongrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.buttonitem1 {
+    grid-column: 1 / 2;
+}
+
+.buttonitem2 {
+    grid-column: 2 / 3;
+}
+
+.calltoactionbutton {
+    display: inline-block;
+    padding: 12px 18px;
+    margin-bottom: 25px;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #ccc;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #9B111E;
+    color: #ffffff;
+}
+
+.calltoactionbutton:hover {
+    color: #9B111E;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+@media only screen and (max-width: 1250px) {
+    .calltoactionbutton {
+        white-space: normal;
+        width: 75%;
+    }
+
+    .buttongrid {
+        grid-template-columns: 1fr;
+    }
+
+    .buttonitem1 {
+        grid-column: 1 / 2;
+    }
+
+    .buttonitem2 {
+        grid-column: 1 / 2;
+    }
+}
+
+
+
+.linebreak {
+    background-color: transparent;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 0.5;
+}
+
+.pefgrid {
+    display: grid;
+    grid-template-columns: .75fr .25fr;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.twocolgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.threecolgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 2;
+}
+
+.item2 {
+    grid-column: 2 / 3;
+}
+
+.item3 {
+    grid-column: 3 / 4;
+}
+
+.mergedrow {
+    grid-column: 1 / 4;
+}
+
+
+.hide-bg {
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+}
+
+.donationicon {
+
+    width: 50%;
+    margin: 50px auto;
+    aspect-ratio: 3/2;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    background-color: #fff;
+
+}
+
+.card p {
+    margin: 0px 10px 25px 10px;
+    padding: 0px 25px 25px 25px;
+}
+
+.cardheader {
+    font-size: 26px;
+    color: #9B111E;
+    font-family: "Oswald";
+
+}
+
+.twocolcard {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    background-color: #fff;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 9px 30px 0px rgba(29, 66, 138, 0.75);
+}
+
+.twocolcard p {
+    margin: 25px 10px 25px 10px;
+
+}
+
+.block__style,
+.col__style {
+    display: none;
+}
+
+.opt-container {
+    display: none;
+} 
+
+
+
+.footercolgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        background-color: #1d428a;
+        height: 350px;
+    
+    }
+
+    .footer p {
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+       margin: 25px 0px 25px 25px;
+        text-align: center;
+    }
+    
+
+
+    .item1 {
+        grid-column: 1 / 2;
+    }
+
+    .item2 {
+        grid-column: 2 / 3;
+    }
+    .item3{
+        grid-column: 3 / 4;
+    }
+
+    .footerimg {
+        width: 100%
+    }

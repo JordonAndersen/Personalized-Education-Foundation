@@ -11,19 +11,17 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-  - name: Set up SSH key
-        uses: shivammathur/setup-ssh@v2
-        with:
-          host: 66.33.195.141
-          known_hosts: |
-            66.33.195.141
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        # Configure SSH for connection to the DreamHost server
+    - name: Set up SSH key
+      uses: shivammathur/setup-ssh@v2
+      with:
+        host: 66.33.195.141
+        known_hosts: |
+          66.33.195.141
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-  - name: Deploy to DreamHost
-        run: |
-          ssh -o StrictHostKeyChecking=no pef_foundation@66.33.195.141 '
-            cd /home/pef_foundation
-            git pull origin main
-          '
-        # Pull the latest changes from the remote repository on the server
+    - name: Deploy to DreamHost
+      run: |
+        ssh -o StrictHostKeyChecking=no pef_foundation@66.33.195.141 '
+          cd /home/pef_foundation
+          git pull origin main
+        '

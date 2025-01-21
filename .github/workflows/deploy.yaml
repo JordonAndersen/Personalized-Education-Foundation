@@ -2,26 +2,24 @@ name: Deploy to DreamHost
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-24.04  # Specify Ubuntu 24.04 runner
+  run_pull:
+    name: run pull
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-
-    - name: Set up SSH key
-      uses: shivammathur/setup-ssh@v2
-      with:
-        host: 66.33.195.141
-        known_hosts: |
-          66.33.195.141
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-    - name: Deploy to DreamHost
+    - name: install ssh keys
       run: |
-        ssh -o StrictHostKeyChecking=no pef_foundation@66.33.195.141 '
-          cd /home/pef_foundation
-          git pull origin main
-        '
+        install -m 600 -D /dev/null ~/.ssh/id_rsa
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts 
+
+    - name: connect and pull
+      run: |
+        ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull origin ${{secrets.MAIN_BRANCH}}"
+
+    - name: cleanup
+      run: rm -rf ~/.ssh

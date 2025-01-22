@@ -1,24 +1,40 @@
-name: Deploy to DreamHost
+name: Deploy to Server
 
 on:
   push:
     branches:
-      - main
+      - main # or your desired branch
 
 jobs:
-  run_pull:
-    name: run pull
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: install ssh keys
-      run: |
-        install -m 600 -D /dev/null ~/.ssh/id_rsa
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts 
-    - name: connect and pull
-      run: |
-        ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull origin ${{secrets.MAIN_BRANCH}}"
-        # trying to pull to the GitHub repository to the server 
-    - name: cleanup
-      run: rm -rf ~/.ssh
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: shivammathur/setup-ssh@v2
+        with:
+          ssh_key_secret: ${{ secrets.SSH_PRIVATE_KEY }}
+          username: ${{ secrets.SSH_USERNAME }}
+          known_hosts: ~/.ssh/known_hosts
+
+      - name: Deploy
+        run: |
+          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+            cd /path/to/deploy/directory 
+            # Replace with your deployment commands here
+            git pull origin main 
+            # Or use your preferred deployment strategy 
+          "
+
+secrets:
+  SSH_PRIVATE_KEY:
+    description: Private SSH key for deployment
+    required: true
+  SSH_USERNAME:
+    description: Username for SSH connection
+    required: true
+  SSH_HOST:
+    description: Hostname or IP address of the server
+    required: true

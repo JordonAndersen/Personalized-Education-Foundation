@@ -14,7 +14,7 @@ jobs:
         target-server: ${{ secrets.SERVER }}
         ssh-port: ${{ secrets.PORT }}
         remote-user: ${{ secrets.USER }}
-        private-ssh-key: ${{ secrets.PASSWORD }}
+        private-ssh-key: ${{ secrets.PASSWORD }} 
         destination-path: ${{ secrets.DIR }}
 
    

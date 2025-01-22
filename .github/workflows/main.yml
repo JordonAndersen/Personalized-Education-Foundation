@@ -11,11 +11,9 @@ jobs:
     - name: 📂 Sync Files
       uses: SamKirkland/web-deploy@v1
       with:
-        target-server: ${{ secrets.SERVER }}
-        ssh-port: ${{ secrets.PORT }}
-        remote-user: ${{ secrets.USER }}
-        private-ssh-key: ${{ secrets.PASSWORD }}
-        destination-path: ${{ secrets.DIR }}
+        target-server: pefoundation.org
+        remote-user: pef_foundation
+        private-ssh-key: ${{ secrets.SSH_KEY }}
 
    
         

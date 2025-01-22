@@ -20,11 +20,11 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         server-dir:  ${{ secrets.DIR }}
         port: ${{ secrets.PORT }}
-        protocol: ftps
+        protocol: sftp
 
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
-          fileToExclude.txt
+   
         

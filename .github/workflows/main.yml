@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         server-dir:  ${{ secrets.DIR }}
         port: ${{ secrets.PORT }}
-        protocol: sftp
+        protocol: ftp
 
         exclude: |
           **/.git*

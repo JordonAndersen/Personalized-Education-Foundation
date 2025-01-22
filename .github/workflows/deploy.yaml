@@ -20,6 +20,7 @@ jobs:
     - name: connect and pull
       run: |
         ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull origin ${{secrets.MAIN_BRANCH}}"
+        # trying to pull to the GitHub repository to the server 
 
     - name: cleanup
       run: rm -rf ~/.ssh

@@ -16,8 +16,15 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.SERVER }}
-        port: ${{ secrets.PORT }}
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASSWORD }}
         server-dir:  ${{ secrets.DIR }}
+        port: ${{ secrets.PORT }}
+        protocol: ftps
+
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          fileToExclude.txt
         

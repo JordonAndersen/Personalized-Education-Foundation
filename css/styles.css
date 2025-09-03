@@ -1,51 +1,4 @@
-body {
-    background-color: #f1f1f1;
-}
 
-h1 {
-    color: #1d428a;
-    font-size: 36px;
-    text-align: center;
-    font-family: 'Oswald';
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 0px;
-    line-height: 1.2;
-}
-
-h2 {
-    color: #1d428a;
-    font-size: 2.5rem;
-    text-align: left;
-    font-family: 'Oswald';
-    font-weight: 400;
-    text-transform: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-p {
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 0px;
-}
-
-#text {
-    color: black;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 0px;
-}
-
-.container {
-    position: relative;
-    text-align: left;
-    color: white;
-
-}
 
 .blurimg {
     filter: blur(1px) grayscale(.25)
@@ -286,43 +239,112 @@ p {
 
 .opt-container {
     display: none;
-} 
+}
 
 
 
 .footercolgrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-template-rows: auto;
-        grid-gap: 10px;
-        background-color: #1d428a;
-        height: 350px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: #1d428a;
+    height: 350px;
+
+}
+
+.footer p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 25px 0px 25px 25px;
+    text-align: center;
+}
+
+
+
+.item1 {
+    grid-column: 1 / 2;
+}
+
+.item2 {
+    grid-column: 2 / 3;
+}
+
+.item3 {
+    grid-column: 3 / 4;
+}
+
+.footerimg {
+    width: 100%
+}
+
+.text-blue-900 {
+    --tw-text-opacity: 1;
+    color: rgb((29, 66, 138) / var(--tw-text-opacity, 1));
+}
+
+.bg-blue-900{
+    --tw-text-opacity: 1;
+    color: rgb((29, 66, 138) / var(--tw-text-opacity, 1));
+}
+.textgreen-600 {
+    --tw-text-opacity: 1;
+    color: rgb(4 99 7/ var(--tw-text-opacity, 1));
+}
+
+.bg-green-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 99 7 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb((155, 17, 30) / var(--tw-bg-opacity, 1));
+}
+
+
+.hero-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1d428a 100%);
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    .footer p {
-        color: white;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.5;
-       margin: 25px 0px 25px 25px;
-        text-align: center;
+    to {
+        opacity: 1;
     }
-    
+}
 
-
-    .item1 {
-        grid-column: 1 / 2;
-    }
-
-    .item2 {
-        grid-column: 2 / 3;
-    }
-    .item3{
-        grid-column: 3 / 4;
-    }
-
-    .footerimg {
-        width: 100%
-    }
+.stats-counter {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}

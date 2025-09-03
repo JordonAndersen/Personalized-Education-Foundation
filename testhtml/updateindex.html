@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Education Foundation | Transforming Lives Through Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>  .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d428a 100%);
+        }
+        .donation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .stats-counter {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }</style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img src="https://i.ontraport.com/166470.ed08175c9adfd8ecc764ca2f06cd05da.PNG" alt="PEF Logo" class="h-10">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#impact" class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium">Our Impact</a>
+                    <a href="#donate" class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium">Ways to Give</a>
+                    <a href="#partnership" class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium">Kauai Partnership</a>
+                    <a href="#contact" class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition duration-300" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                        Donate Now
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-3 px-2">
+            <a href="#about" class="block px-3 py-2 text-blue-900 hover:bg-blue-50 rounded-md">About</a>
+            <a href="#impact" class="block px-3 py-2 text-blue-900 hover:bg-blue-50 rounded-md">Our Impact</a>
+            <a href="#donate" class="block px-3 py-2 text-blue-900 hover:bg-blue-50 rounded-md">Ways to Give</a>
+            <a href="#partnership" class="block px-3 py-2 text-blue-900 hover:bg-blue-50 rounded-md">Kauai Partnership</a>
+            <a href="#contact" class="block px-3 py-2 text-blue-900 hover:bg-blue-50 rounded-md">Contact</a>
+            <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                Donate Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Empowering Students Through Personalized Education</h1>
+                    <p class="text-xl mb-8">Your support helps bridge the gap for families who need financial assistance to access quality education at CMASAS.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-md font-bold transition duration-300" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                            Donate Today
+                        </button>
+                        <a href="https://online.factsmgt.com/signin/4Q3WK/" class="border-2 border-white hover:bg-white hover:text-blue-600 text-white px-6 py-3 rounded-md font-bold transition duration-300 text-center">
+                            Apply for Assistance
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10 fade-in">
+                    <div class="video-container rounded-lg overflow-hidden shadow-2xl">
+                        <iframe src="https://www.youtube.com/embed/Vho8JzRishg?si=lhPx0pGmaNelH7ae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Impact in Numbers</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Together, we're making a difference in students' lives across the nation and in our Kauai partnership.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold text-blue-600 mb-2 stats-counter" data-target="125">0</div>
+                    <p class="text-blue-900 font-medium">Students Supported</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold text-blue-600 mb-2 stats-counter" data-target="500000">0</div>
+                    <p class="text-blue-900 font-medium">Dollars Awarded</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold text-blue-600 mb-2 stats-counter" data-target="42">0</div>
+                    <p class="text-blue-900 font-medium">Kauai Students</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold text-blue-600 mb-2 stats-counter" data-target="100">0+</div>
+                    <p class="text-blue-900 font-medium">Families Impacted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://i.ontraport.com/166470.8c86bb385c93a1ef89deaca08d22a8f5.PNG" alt="Students in a circle" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6">About Personalized Education Foundation</h2>
+                    <p class="text-lg text-gray-700 mb-6">At the Personalized Education Foundation, we are on a mission to transform lives through education. Our goal is to empower students and families by providing access to a personalized education experience.</p>
+                    <p class="text-lg text-gray-700 mb-6">We achieve this through fundraising, Tuition Assistance, and the creation of an endowment for current and prospective members of the Christa McAuliffe Academy School of Arts and Sciences (CMASAS) community.</p>
+                    <p class="text-lg text-gray-700 mb-8">With your support, we're making K-12 and college educational opportunities more affordable for those where a private education is just out of reach. The Personalized Education Foundation is a 501(c)(3) organization, so all donations are tax-deductible.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                            Support Our Mission
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Give Section -->
+    <section id="impact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Why Your Support Matters</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your contribution creates opportunities for students to thrive in an environment tailored to their needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-unlock-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Unlock Unlimited Possibilities</h3>
+                    </div>
+                    <p class="text-gray-700">Your gift to the Personalized Education Foundation is a truly unrestricted contribution. This means it can be deployed where it's needed most, providing vital support to students and families facing challenging circumstances. Many of these families depend on CMASAS to escape the limitations of their local public-school systems.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-hands-helping text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Community United</h3>
+                    </div>
+                    <p class="text-gray-700">When you contribute to our Tuition Assistance fund, you're not just giving; you're joining a community that believes in the power of education to change lives. Your participation sends a powerful message of solidarity and attracts further support from external sources. Together, we're creating opportunities for those who might otherwise struggle to afford a CMASAS education.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://i.ontraport.com/166470.2deed4071e22330dad71372d76f31ce0.PNG" alt="Infographic" class="rounded-lg shadow-lg mx-auto max-w-4xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- CMASAS History -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center flex-row-reverse">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                    <img src="https://i.ontraport.com/166470.b495ecdd8b16f5bff95f6c01227d81b5.PNG" alt="Student cheering" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6">CMASAS School History</h2>
+                    <p class="text-lg text-gray-700 mb-6">Inspired by the heroic life and acting in her memory, CMASAS honors Christa McAuliffe by educating the next generation of global leaders. CMASAS opened in July 2009 and is the culmination of over 25 years of combined experience, knowledge, and perseverance in alternative education of its Co-founder and Executive Director Christopher Geis.</p>
+                    <p class="text-lg text-gray-700">Since 2009, CMASAS has grown from its rather humble beginnings into a thriving worldwide organization headquartered in the Pacific Northwest. CMASAS operates under Personalized Education Group, Inc., an educational management organization. Our knowledgeable, experienced, and passionate team of administrators, office staff, and educators foster a sense of community and an atmosphere of harmony where new ideas can take root and grow more easily and where innovation is welcomed and applauded.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Questions -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">You Might Wonder...</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Common questions we hear from our supporters</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-question-circle text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">"A small donation will not make a difference."</h3>
+                    </div>
+                    <p class="text-gray-700">Every donation, regardless of size, makes a tangible impact. Your contribution matters, and collective participation is the key to our success. Just $50 can provide a student with essential learning materials for a month.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-question-circle text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">"My donation is not directly helping students."</h3>
+                    </div>
+                    <p class="text-gray-700">Your gift is an unrestricted donation that provides essential support to families in need, ensuring that students can continue to flourish at CMASAS. 100% of donations go directly to student support programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kauai Partnership Section -->
+    <section id="partnership" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Kauai Education Partnership</h2>
+                <p class="text-xl max-w-3xl mx-auto">Bringing personalized education opportunities to the Garden Isle</p>
+            </div>
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1507525428033-a741cf5a1e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kauai landscape" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Expanding Educational Access in Kauai</h3>
+                    <p class="text-lg mb-6">Our partnership with Kauai educators and community leaders is bringing personalized learning opportunities to students across the island. Recognizing the unique challenges faced by families in Hawaii's more remote communities, we've established a special initiative to support Kauai students.</p>
+                    <p class="text-lg mb-6">Through this partnership, we've already provided tuition assistance to 42 Kauai students, helping them access CMASAS's innovative educational model without leaving their island home.</p>
+                    <p class="text-lg mb-8">Our Kauai-specific programs include:</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3 text-blue-200"></i>
+                            <span>Localized curriculum connections to Hawaiian culture and environment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3 text-blue-200"></i>
+                            <span>Specialized support for students in rural areas with limited school options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3 text-blue-200"></i>
+                            <span>Community-based learning opportunities that connect classroom concepts to island life</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3 text-blue-200"></i>
+                            <span>Increased tuition assistance specifically for Kauai families</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4">
+                        <button class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-md font-bold transition duration-300" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                            Support Kauai Students
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Give -->
+    <section id="donate" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Invest in the Future Today</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your generosity can transform the lives of our students. Here's how you can make a difference:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-envelope text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Mail</h3>
+                    <p class="text-gray-700 mb-4 text-center">Send a check to the address below for a straightforward way to contribute:</p>
+                    <p class="text-gray-700 text-center">5200 SW Meadows Rd. Ste. 150<br>Lake Oswego, OR 97035</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-credit-card text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Credit Card</h3>
+                    <p class="text-gray-700 mb-4 text-center">Make a quick and secure gift online with Visa, MasterCard, or American Express.</p>
+                    <form name="PrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx" class="text-center">
+                        <input type="hidden" name="LinkId" value="6cfadde7-c0d3-4032-964c-a4581f438b70" />
+                        <input type="submit" value="Donate Now" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium cursor-pointer" />
+                    </form>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Stocks</h3>
+                    <p class="text-gray-700 text-center">Donating appreciated stock is a strategic way to support our mission while minimizing capital gains taxes. Consult your broker for electronic stock transfers.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-piggy-bank text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">IRA</h3>
+                    <p class="text-gray-700 text-center">Take advantage of the IRA Charitable Rollover, now a permanent part of the Federal Tax Code, to make a tax-efficient charitable gift to Personalized Education Foundation directly from your IRA.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-hand-holding-usd text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Donor Advised Funds</h3>
+                    <p class="text-gray-700 text-center">If you have a Donor Advised Fund (DAF), consider making a gift from it to support the Personalized Education Foundation. Get in touch with us for details.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg donation-card transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-heart text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Planned Giving</h3>
+                    <p class="text-gray-700 text-center">Leave a lasting impact at Personal Education Foundation through a planned gift. Email us for more information on creating a legacy of support.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">Your support matters, and together, we can continue to make education accessible, empowering, and transformative. Join us in shaping a brighter future for students at CMASAS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Your donation today can change a student's tomorrow. Join our community of supporters who believe in the power of personalized education.</p>
+            <button class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-md font-bold text-lg transition duration-300" zeffy-form-link="https://www.zeffy.com/embed/donation-form/your-donation-their-destiny?modal=true">
+                Donate Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Mission</h3>
+                    <p class="mb-6">At the Personalized Education Foundation, our mission is clear: we are dedicated to transforming lives through education.</p>
+                    <p>Join us in our mission to create a brighter educational future for all.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://i.ontraport.com/166470.ccd53fb402ce1a3440ac0c8d9c51f571.PNG" alt="PEF Logo" class="h-24 mx-auto mb-6">
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 p-3 rounded-full">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 p-3 rounded-full">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 p-3 rounded-full">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 p-3 rounded-full">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p class="mb-4">5200 SW Meadows Rd. Ste. 150<br>Lake Oswego, OR 97035</p>
+                    <p class="mb-4">Email: <a href="mailto:info@pefoundation.org" class="hover:underline">info@pefoundation.org</a></p>
+                    <p>Kauai Partnership Inquiries: <a href="mailto:kauai@pefoundation.org" class="hover:underline">kauai@pefoundation.org</a></p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>© 2023 Personalized Education Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Animate stats counters
+        const counters = document.querySelectorAll('.stats-counter');
+        const speed = 200;
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+
+        // Start animation when stats section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.bg-white.py-16');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
